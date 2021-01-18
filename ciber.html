@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprint 1. javascript</title>
+</head>
+
+<body>
+    <script>
+        /***************
+        *** Nivell 1 ***
+        ****************/
+        // Exercici 1
+        console.log("Hola Mundo");
+
+        // Exercici 2
+        alert("Me llamo Javier Maestro");
+
+        // Exercici 3
+        let name = "Javier";
+        let surname = "Maestro";
+
+        // Exercici 4
+        let num1 = 2;
+        let num2 = 4;
+        console.log("La suma de " + num1 + " i " + num2 + " es " + (num1 + num2));
+
+        // Exercici 5
+        let nota_examen = 6;
+        if (nota_examen > 5) {
+            alert("Examen aprovat");
+        } else {
+            alert("No has aprovat");
+        }
+
+        // Exercici 6
+        let frase = "Tinc un cotxe de color blau";
+        console.log(frase.replace('blau', 'verd'));
+
+
+        // Exercici 7
+        let taula = {};
+        let ordinador = {};
+        let libreta = {};
+        let lista = [taula, ordinador, libreta];
+        for (i in lista) {
+            document.write(`<br>` + lista[i] + " esta en la posición: " + i);
+        }
+
+        // Exercici 8
+        function calculadora(operador, valor1, valor2) {
+            switch (operador) {
+                case "suma": result = valor1 + valor2;
+                    break;
+                case "resta": result = valor1 - valor2;
+                    break;
+                case "multiplica": result = valor1 * valor2;
+                    break;
+            }
+            document.write(`<br>` + result);
+        }
+
+        var resultat1 = calculadora('suma', 40, 20);
+        var resultat2 = calculadora('resta', 40, 20);
+        var resultat3 = calculadora('multiplica', 40, 20);
+
+
+        /***************
+        *** Nivell 2 ***
+        ****************/
+        //Exercici 1
+        function calculadora2(operador, valor1, valor2) {
+            if (valor2 !== 0) {
+                switch (operador) {
+                    case "suma": result = valor1 + valor2;
+                        break;
+                    case "resta": result = valor1 - valor2;
+                        break;
+                    case "multiplica": result = valor1 * valor2;
+                        break;
+                    case "dividir":
+                        result = valor1 / valor2;
+                        break;
+                }
+                document.write(`<br>` + result);
+            }
+            else { document.write(`<br>` + 'El denominador en una fracción no puede ser cero porque la división entre cero no está definida') };
+
+        }
+
+        let resultat4 = calculadora2('suma', 40, 20);
+        let resultat5 = calculadora2('resta', 40, 20);
+        let resultat6 = calculadora2('multiplica', 40, 20);
+        let resultat7 = calculadora2('dividir', 40, 20);
+        let resultat8 = calculadora2('dividir', 40, 0);
+
+
+        /***************
+        *** Nivell 3 ***
+        ****************/
+        //Exercici 1
+
+
+    </script>
+
+  
+</body>
+
+</html>
